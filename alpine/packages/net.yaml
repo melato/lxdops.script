@@ -1,0 +1,7 @@
+os:
+  name: alpine
+description: network related packages
+packages:
+  - curl
+  - rrsync
+  - bind-tools

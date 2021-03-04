@@ -1,0 +1,4 @@
+include:
+  - ../../alpine/packages/packages.yaml
+  - ../../alpine/lamp/mariadb-client.yaml
+  - ../../alpine/haproxy/packages.yaml

@@ -1,0 +1,13 @@
+os:
+  name: alpine
+packages:
+- postfix
+- libsasl
+- cyrus-sasl
+- cyrus-sasl-plain
+- openssl
+scripts:
+- name: postfix
+  body: |
+    rc-update add postfix
+    rc-service postfix start

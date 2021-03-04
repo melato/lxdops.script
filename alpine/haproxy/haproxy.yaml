@@ -1,0 +1,18 @@
+os:
+  name: alpine
+packages:
+  - haproxy
+include:
+  - packages.yaml
+files:
+  - source: etc/logrotate.d/haproxy
+    path: /etc/logrotate.d/haproxy
+  - source: etc/rsyslog.conf
+    path: /etc/rsyslog.conf
+scripts:
+  - name: "haproxy"
+    body: |
+      mkdir -p /etc/opt/haproxy
+      rm -rf /etc/haproxy
+      ln -s /etc/opt/haproxy /etc/haproxy
+      rc-update add haproxy

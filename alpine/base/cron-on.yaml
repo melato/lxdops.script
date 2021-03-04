@@ -1,0 +1,8 @@
+os:
+  name: alpine
+description: enable cron
+scripts:
+- name: cron
+  body: |
+    rc-update add crond
+    rc-service crond start

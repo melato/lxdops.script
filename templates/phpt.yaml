@@ -1,0 +1,12 @@
+os:
+  name: alpine
+origin: alp/copy
+profiles:
+  - default
+  - noboot
+include:
+  - device/standard.yaml
+  - /var/opt/dev/script/lxd/launch/alpine/apache2.yaml
+  - /var/opt/dev/script/lxd/launch/alpine/php.yaml
+snapshot: copy
+stop: true

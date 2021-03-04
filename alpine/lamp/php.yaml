@@ -1,0 +1,38 @@
+os:
+  name: alpine
+packages:
+- apache2
+- php
+- php7-pecl-imagick
+- php7-pecl-apcu
+- php7-json
+- php-apache2
+- php-bcmath
+- php-bz2
+- php-ctype
+- php-curl
+- php-fileinfo
+- php-dom
+- php-gd
+- php-gmp
+- php-iconv
+- php-intl
+- php-mbstring
+- php-mysqli
+- php-opcache
+- php-openssl
+- php-pcntl
+- php-pdo_mysql
+- php-posix
+- php-phar
+- php-session
+- php-simplexml
+- php-tokenizer
+- php-xml
+- php-xmlreader
+- php-xmlwriter
+- php-zip
+- php-zlib
+- sqlite
+- unzip
+- zip

@@ -1,0 +1,9 @@
+os:
+  name: alpine
+profiles:
+- default
+include:
+- version.yaml
+- ssh.yaml
+- motd.yaml
+- cron-off.yaml

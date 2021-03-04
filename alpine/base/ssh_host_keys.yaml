@@ -1,0 +1,14 @@
+os:
+  name: alpine
+description: |
+  generate new host ssh keys, and save them in /etc/opt/etc/ssh, unless /etc/opt/etc/ssh already exists.
+  This should be run when creating a new container from a template, so the container has its own ssh keys.
+scripts:
+- name: ssh_keys
+  body: |
+    if [ ! -e /etc/opt/etc/ssh ]; then
+      mkdir -p /etc/opt/etc/ssh
+      rm -f /etc/ssh/ssh_host*
+      service sshd restart
+      cp /etc/ssh/ssh_host* /etc/opt/etc/ssh/
+    fi

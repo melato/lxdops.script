@@ -1,0 +1,20 @@
+os:
+  name: alpine
+description: install awstats prerequisites and directories
+include:
+  - packages.yaml
+scripts:
+- name: "cgi"
+  body: |
+    sed -i 's/#LoadModule cgi/LoadModule cgi/' /etc/apache2/httpd.conf
+    rc-service apache2 restart
+- name: "perl"
+  body: |
+    cpanm --no-wget install URI::Escape
+- name: "awstats"
+  body: |
+    mkdir -p /var/opt/awstats
+    mkdir -p /etc/opt/awstats
+    if [ ! -e /etc/awstats ]; then
+      ln -s /etc/opt/awstats /etc/awstats
+    fi

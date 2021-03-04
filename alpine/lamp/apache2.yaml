@@ -1,0 +1,20 @@
+os:
+  name: alpine
+description:  Install apache2, enable modules remoteip, rewrite, setup conf files
+packages:
+- apache2
+files:
+- source: apache2/remoteip.conf
+  path: /etc/apache2/conf.d/remoteip.conf
+- source: apache2/etc.conf
+  path: /etc/apache2/conf.d/etc.conf
+- source: apache2/name.conf
+  path: /etc/apache2/conf.d/name.conf
+scripts:
+- name: apache2
+  body: |
+    mkdir -p /etc/opt/apache2
+    sed -i 's/#LoadModule remoteip_module/LoadModule remoteip_module/' /etc/apache2/httpd.conf
+    sed -i 's/#LoadModule rewrite_module/LoadModule rewrite_module/' /etc/apache2/httpd.conf
+    rc-update add apache2
+    rc-service apache2 start

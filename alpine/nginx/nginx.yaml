@@ -1,0 +1,20 @@
+os:
+  name: alpine
+packages:
+- rsyslog
+- nginx
+- apache2-utils
+scripts:
+- name: nginx
+  body: |
+    rc-update add rsyslog
+    rc-update add nginx
+    mkdir -p /etc/opt/nginx
+    rm /etc/nginx/conf.d/default.conf
+files:
+- source: files/etc.conf
+  path: /etc/nginx/http.d/etc.conf
+  mode: 0444
+- source: files/real_ip.conf
+  path: /etc/nginx/http.d/real_ip.conf
+  mode: 0444

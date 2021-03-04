@@ -1,0 +1,13 @@
+os:
+  name: alpine
+description: all dev packages
+include:
+  - vim.yaml
+  - git.yaml
+  - archive.yaml
+  - encrypt.yaml
+  - java.yaml
+  - log.yaml
+  - net.yaml
+  - perl.yaml
+  - sqlite.yaml

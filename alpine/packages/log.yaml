@@ -1,0 +1,6 @@
+os:
+  name: alpine
+description: log-related packages
+packages:
+  - logrotate
+  - rsyslog

@@ -1,0 +1,28 @@
+profile-pattern: (instance).lxdops
+include:
+  - ../local/properties.yaml
+filesystems:
+  - id: host
+    pattern: (zfsroot)/(project/)host/(instance)
+  - id: log
+    pattern: (zfsroot)/(project/)log/(instance)
+devices:
+  - path: /etc/opt
+    name: etc
+    filesystem: host
+  - path: /opt
+    name: opt
+    filesystem: host
+  - path: /var/opt
+    name: var
+    filesystem: host
+  - path: /usr/local/bin
+    name: bin
+    filesystem: host
+  - path: /home
+    name: home
+    filesystem: host
+  - path: /var/log
+    name: log
+    filesystem: log
+    dir: "."

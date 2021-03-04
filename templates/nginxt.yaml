@@ -1,0 +1,11 @@
+os:
+  name: alpine
+description: nginx template
+origin: alp/copy
+profiles:
+  - default
+include:
+  - ../device/standard.yaml
+  - ../alpine/nginx/nginx.yaml
+snapshot: copy
+stop: true

@@ -1,0 +1,12 @@
+os:
+  name: alpine
+description: A base alpine container, with several packages, but minimal processes
+include:  
+  - apk-cache.yaml
+  - ../device/standard.yaml
+  - ../alpine/base/alpine.yaml
+  - ../alpine/base/user.yaml
+  - ../local/alpine/packages.yaml
+stop: true  
+snapshot: copy  
+

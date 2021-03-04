@@ -1,0 +1,12 @@
+os:
+  name: alpine
+  version: 3.13
+description: Specifies a device that we use as a shared apk-cache for the template containers
+filesystems:
+- id: apk
+  pattern: (zfsroot)/apk-cache/alpine-3.13
+devices:
+- path: /etc/apk/cache
+  name: apk
+  dir: .
+  filesystem: apk

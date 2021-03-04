@@ -1,0 +1,4 @@
+os:
+  name: alpine
+packages:
+- mariadb-client

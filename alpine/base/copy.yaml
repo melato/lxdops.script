@@ -1,0 +1,8 @@
+os:
+  name: alpine
+description: copy a container
+include:
+ - nogetty.yaml
+ - etc.yaml
+ - ssh_host_keys.yaml
+

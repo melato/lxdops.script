@@ -1,0 +1,17 @@
+/var/log/haproxy.log
+{
+	notifempty
+	missingok
+	compress
+	daily
+	dateext
+	dateyesterday
+	rotate 7
+	olddir old
+	createolddir 0775 root root
+	renamecopy
+	sharedscripts
+	postrotate
+		/etc/init.d/rsyslog --ifstarted reload >/dev/null
+	endscript
+}

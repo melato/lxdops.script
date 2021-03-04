@@ -1,0 +1,7 @@
+os:
+  name: alpine
+description: packages needed for user creation
+packages:
+  - sudo
+  - doas
+  - bash

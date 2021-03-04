@@ -1,0 +1,10 @@
+os:
+  name: alpine
+description: copy files from /etc/opt/etc/ to /etc/, and reboot
+scripts:
+  - name: etc
+    reboot: true
+    body: |
+      if [ -d /etc/opt/etc ]; then
+        cp -R /etc/opt/etc /
+      fi

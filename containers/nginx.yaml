@@ -1,0 +1,10 @@
+os:
+  name: alpine
+origin: nginxt/copy
+device-template: nginxt
+profiles:
+  - default
+include:
+  - ../device/standard.yaml
+  - ../alpine/base/copy.yaml
+  - ../local/alpine/user.yaml
