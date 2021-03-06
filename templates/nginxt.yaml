@@ -6,6 +6,7 @@ profiles:
   - default
 include:
   - ../device/standard.yaml
+  - ../local/alpine/template.yaml
   - ../alpine/nginx/nginx.yaml
 snapshot: copy
 stop: true

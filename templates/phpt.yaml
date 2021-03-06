@@ -3,10 +3,9 @@ os:
 origin: alp/copy
 profiles:
   - default
-  - noboot
 include:
-  - device/standard.yaml
-  - /var/opt/dev/script/lxd/launch/alpine/apache2.yaml
-  - /var/opt/dev/script/lxd/launch/alpine/php.yaml
+  - ../device/standard.yaml
+  - ../local/alpine/template.yaml
+  - ../alpine/lamp/lamp.yaml
 snapshot: copy
 stop: true

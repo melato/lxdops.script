@@ -1,7 +1,7 @@
 os:
   name: alpine
-origin: nginxt/copy
-device-template: nginxt
+origin: alp/copy
+device-template: alp
 source-config: ../templates/alp.yaml
 profiles:
   - default

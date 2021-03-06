@@ -1,7 +1,10 @@
 os:
   name: alpine
-description: packages needed for user creation
-packages:
-  - sudo
-  - doas
-  - bash
+users:
+    - name:
+      shell: /bin/bash
+      sudo: true
+      ssh: true
+      groups:
+        - wheel
+        - adm
