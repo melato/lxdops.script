@@ -2,7 +2,7 @@ os:
   name: alpine
 description: all dev packages
 include:
-  - vim.yaml
+  - user.yaml
   - git.yaml
   - archive.yaml
   - encrypt.yaml
