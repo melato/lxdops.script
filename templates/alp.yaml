@@ -4,6 +4,7 @@ description: A base alpine container, with several packages, but minimal process
 include:  
   - ../device/standard.yaml
   - ../local/alpine/template.yaml
+  - ../local/alpine/packages.yaml
   - ../alpine/base/alpine.yaml
 stop: true  
 snapshot: copy  

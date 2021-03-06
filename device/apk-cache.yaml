@@ -4,10 +4,10 @@ os:
 description: |
   Specifies defines a shared /etc/apk/cache device
 filesystems:
-- id: apk
-  pattern: (zfsroot)/apk-cache/alpine-3.13
+  apk:
+      pattern: (zfsroot)/apk-cache/alpine-3.13
 devices:
-- path: /etc/apk/cache
-  name: apk
-  dir: .
-  filesystem: apk
+  apk:
+    path: /etc/apk/cache
+    dir: .
+    filesystem: apk

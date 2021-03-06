@@ -1,5 +1,5 @@
 filesystems:
-  - id: mysql-data
+  mysql-data:
     pattern: (zfsroot)/(project/)mariadb/(instance)/mysql-data
     zfsproperties:
       recordsize: 16k
@@ -7,7 +7,7 @@ filesystems:
       compression: lz4
       logbias: throughput
       primarycache: metadata
-  - id: mysql-log
+  mysql-log:
     pattern: (zfsroot)/(project/)mariadb/(instance)/mysql-log
     zfsproperties:
       recordsize: 128k
@@ -16,11 +16,11 @@ filesystems:
       logbias: throughput
       primarycache: metadata
 devices:
-  - path: /var/lib/mysql
+  mysql-data:
+    path: /var/lib/mysql
     filesystem: mysql-data
-    name: mysql-data
     dir: .
-  - path: /var/lib/mysql-log
+  mysql-log:
+    path: /var/lib/mysql-log
     filesystem: mysql-log
-    name: mysql-log
     dir: .
