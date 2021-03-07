@@ -5,8 +5,8 @@ profiles:
   - default
 include:
   - include/template.yaml
+  - include/apk-cache.yaml
   - ../device/standard.yaml
-  - ../device/apk-cache.yaml
   - ../local/alpine/template.yaml
   - ../alpine/lamp/lamp.yaml
 snapshot: copy

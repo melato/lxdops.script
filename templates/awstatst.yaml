@@ -8,12 +8,10 @@ description: |
 device-template: phpt
 profiles:
   - default
-  - noboot
-  - awstats-7.8
 include:
   - include/template.yaml
+  - include/apk-cache.yaml
   - ../device/standard.yaml
-  - ../device/apk-cache.yaml
   - /var/opt/dev/script/lxddops/alpine/awstats/awstats.yaml
 snapshot: copy
 stop: true

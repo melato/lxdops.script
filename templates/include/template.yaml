@@ -1,2 +1,4 @@
+profiles:
+  - default
 profile-config:
     boot.autostart: "false"
