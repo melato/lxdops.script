@@ -6,6 +6,7 @@ include:
   - include/apk-cache.yaml
   - ../device/standard.yaml
   - ../alpine/base/alpine.yaml
+  - ../alpine/base/packages.yaml
   - ../alpine/packages/packages.yaml
   - ../local/alpine/template.yaml
 stop: true  

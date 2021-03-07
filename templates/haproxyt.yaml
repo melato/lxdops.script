@@ -1,0 +1,13 @@
+os:
+  name: alpine
+description: haproxy template
+origin: alp/copy
+device-template: alp
+include:
+  - include/template.yaml
+  - include/apk-cache.yaml
+  - ../device/standard.yaml
+  - ../local/alpine/template.yaml
+  - ../alpine/haproxy/haproxy.yaml
+snapshot: copy
+stop: true
