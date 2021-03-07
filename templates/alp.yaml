@@ -2,6 +2,7 @@ os:
   name: alpine
 description: A base alpine container, with several packages, but minimal processes
 include:  
+  - include/template.yaml
   - ../device/standard.yaml
   - ../local/alpine/template.yaml
   - ../local/alpine/packages.yaml

@@ -5,6 +5,7 @@ origin: alp/copy
 profiles:
   - default
 include:
+  - include/template.yaml
   - ../device/standard.yaml
   - ../local/alpine/template.yaml
   - ../alpine/nginx/nginx.yaml
