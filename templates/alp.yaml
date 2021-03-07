@@ -4,6 +4,7 @@ description: A base alpine container, with several packages, but minimal process
 include:  
   - include/template.yaml
   - ../device/standard.yaml
+  - ../device/apk-cache.yaml
   - ../local/alpine/template.yaml
   - ../local/alpine/packages.yaml
   - ../alpine/base/alpine.yaml

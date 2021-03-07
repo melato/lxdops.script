@@ -13,6 +13,7 @@ profiles:
 include:
   - include/template.yaml
   - ../device/standard.yaml
+  - ../device/apk-cache.yaml
   - /var/opt/dev/script/lxddops/alpine/awstats/awstats.yaml
 snapshot: copy
 stop: true
