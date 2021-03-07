@@ -2,8 +2,6 @@ os:
   name: alpine
 description: nginx template
 origin: alp/copy
-profiles:
-  - default
 include:
   - include/template.yaml
   - include/apk-cache.yaml

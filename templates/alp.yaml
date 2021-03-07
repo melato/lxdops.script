@@ -5,9 +5,9 @@ include:
   - include/template.yaml
   - include/apk-cache.yaml
   - ../device/standard.yaml
-  - ../local/alpine/template.yaml
-  - ../local/alpine/packages.yaml
   - ../alpine/base/alpine.yaml
+  - ../alpine/packages/packages.yaml
+  - ../local/alpine/template.yaml
 stop: true  
 snapshot: copy  
 

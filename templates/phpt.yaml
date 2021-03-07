@@ -1,13 +1,11 @@
 os:
   name: alpine
 origin: alp/copy
-profiles:
-  - default
 include:
   - include/template.yaml
   - include/apk-cache.yaml
   - ../device/standard.yaml
-  - ../local/alpine/template.yaml
   - ../alpine/lamp/lamp.yaml
+  - ../local/alpine/template.yaml
 snapshot: copy
 stop: true

@@ -6,8 +6,6 @@ description: |
     Does not include awstats itself.  This should be downloaded
     from the awstats website and attached via a profile.
 device-template: phpt
-profiles:
-  - default
 include:
   - include/template.yaml
   - include/apk-cache.yaml
