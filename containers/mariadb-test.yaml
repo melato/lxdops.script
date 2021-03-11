@@ -1,0 +1,9 @@
+os:
+  name: debian
+origin: mariadb/test
+device-origin: mariadb@test
+profiles:
+  - default
+include:
+  - ../device/mariadb.yaml
+  - ../device/standard.yaml
