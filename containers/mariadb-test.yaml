@@ -7,3 +7,4 @@ profiles:
 include:
   - ../device/mariadb.yaml
   - ../debian/container.yaml
+  - ../local/test.yaml
