@@ -1,9 +1,9 @@
 os:
   name: debian
-origin: mariadb/test
+origin: mariadbt/copy
 device-origin: mariadb@test
 profiles:
   - default
 include:
   - ../device/mariadb.yaml
-  - ../device/standard.yaml
+  - ../debian/container.yaml
