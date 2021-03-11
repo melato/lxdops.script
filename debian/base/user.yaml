@@ -1,0 +1,9 @@
+os:
+  name: debian
+users:
+    - name:
+      shell: /bin/bash
+      sudo: true
+      ssh: true
+      groups:
+        - adm

@@ -1,0 +1,7 @@
+os:
+  name: debian
+description: copy a container
+include:
+ - etc.yaml
+ - ssh_host_keys.yaml
+

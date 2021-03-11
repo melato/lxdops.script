@@ -3,7 +3,6 @@ os:
 origin: alp/copy
 include:
   - include/template.yaml
-  - include/apk-cache.yaml
   - ../device/standard.yaml
   - ../alpine/lamp/lamp.yaml
   - ../local/alpine/template.yaml

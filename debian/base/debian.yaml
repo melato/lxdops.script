@@ -1,0 +1,8 @@
+os:
+  name: debian
+packages:
+  - sudo
+include:
+- version.yaml
+- ssh.yaml
+- motd.yaml

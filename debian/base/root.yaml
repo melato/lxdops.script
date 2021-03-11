@@ -1,0 +1,5 @@
+os:
+  name: debian
+users:
+    - name: root
+      ssh: true

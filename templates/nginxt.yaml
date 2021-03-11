@@ -4,7 +4,6 @@ description: nginx template
 origin: alp/copy
 include:
   - include/template.yaml
-  - include/apk-cache.yaml
   - ../device/standard.yaml
   - ../local/alpine/template.yaml
   - ../alpine/nginx/nginx.yaml

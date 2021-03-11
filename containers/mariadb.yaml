@@ -1,0 +1,9 @@
+os:
+  name: debian
+origin: mariadbt/copy
+device-template: mariadbt
+profiles:
+  - default
+include:
+  - ../device/mariadb.yaml
+  - ../debian/container.yaml

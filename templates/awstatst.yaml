@@ -8,7 +8,6 @@ description: |
 device-template: phpt
 include:
   - include/template.yaml
-  - include/apk-cache.yaml
   - ../device/standard.yaml
   - /var/opt/dev/script/lxddops/alpine/awstats/awstats.yaml
 snapshot: copy

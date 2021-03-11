@@ -1,6 +1,6 @@
 filesystems:
   mysql-data:
-    pattern: (zfsroot)/(project/)mariadb/(instance)/mysql-data
+    pattern: (zfsroot)/(project/)host/(instance)/mysql-data
     zfsproperties:
       recordsize: 16k
       atime: off
@@ -8,7 +8,7 @@ filesystems:
       logbias: throughput
       primarycache: metadata
   mysql-log:
-    pattern: (zfsroot)/(project/)mariadb/(instance)/mysql-log
+    pattern: (zfsroot)/(project/)host/(instance)/mysql-log
     zfsproperties:
       recordsize: 128k
       atime: off

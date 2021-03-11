@@ -1,0 +1,18 @@
+os:
+  name: debian
+scripts:
+- name: motd
+  body: |2+
+
+
+    
+    if [ -f /etc/os-release ]; then
+      . /etc/os-release
+      version=${VERSION_ID}
+    else
+      version='?'
+    fi
+    host=`hostname`
+    echo "Debian $version $host" > /etc/motd
+
+

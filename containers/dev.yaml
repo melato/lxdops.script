@@ -2,7 +2,6 @@ os:
   name: alpine
 origin: alp/copy
 device-template: alp
-source-config: ../templates/alp.yaml
 profiles:
   - default
 include:

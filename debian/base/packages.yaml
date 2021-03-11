@@ -1,0 +1,7 @@
+os:
+  name: alpine
+descriptions: a few basic packages
+packages:
+  - sudo
+  - rsyslog
+  - logrotate

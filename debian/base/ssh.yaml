@@ -1,0 +1,16 @@
+os:
+  name: debian
+packages:
+- openssh-server
+scripts:
+- name: ssh
+  body: |2+
+
+
+    if grep 'PasswordAuthentication yes' /etc/ssh/sshd_config > /dev/null
+    then
+      sed -i 's/.*PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+    fi
+
+
+

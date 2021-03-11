@@ -1,0 +1,7 @@
+os:
+  name: debian
+packages:
+  - sudo
+  - man-db
+include:
+- debian.yaml
