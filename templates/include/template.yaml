@@ -1,4 +1,4 @@
 profiles:
   - default
-profile-config:
-    boot.autostart: "false"
+include:
+  ../noboot.yaml

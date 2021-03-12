@@ -1,0 +1,2 @@
+profile-config:
+    boot.autostart: "false"

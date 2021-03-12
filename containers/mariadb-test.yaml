@@ -2,6 +2,7 @@ os:
   name: debian
 origin: mariadbt/copy
 device-origin: mariadb@test
+x-source-config: mariadb.yaml
 profiles:
   - default
 include:
