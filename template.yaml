@@ -1,4 +1,4 @@
 profiles:
   - default
 include:
-  ../noboot.yaml
+-  noboot.yaml
