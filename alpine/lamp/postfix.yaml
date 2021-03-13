@@ -4,7 +4,6 @@ packages:
 - postfix
 - libsasl
 - cyrus-sasl
-- cyrus-sasl-plain
 - openssl
 scripts:
 - name: postfix
