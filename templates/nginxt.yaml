@@ -3,9 +3,7 @@ os:
 description: nginx template
 origin: alp/copy
 include:
-  - include/template.yaml
-  - ../device/standard.yaml
-  - ../local/alpine/template.yaml
+  - include/alpine.yaml
   - ../alpine/nginx/nginx.yaml
 snapshot: copy
 stop: true

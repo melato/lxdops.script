@@ -4,9 +4,7 @@ description: haproxy template
 origin: alp/copy
 device-template: alp
 include:
-  - include/template.yaml
-  - ../device/standard.yaml
-  - ../local/alpine/template.yaml
+  - include/alpine.yaml
   - ../alpine/haproxy/haproxy.yaml
 snapshot: copy
 stop: true

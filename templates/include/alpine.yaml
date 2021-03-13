@@ -1,0 +1,7 @@
+os:
+  name: alpine
+include:  
+- template.yaml
+- ../../device/apk-cache.yaml
+- ../../alpine/base/alpine.yaml
+- ../../alpine/base/packages.yaml

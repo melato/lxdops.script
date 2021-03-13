@@ -1,11 +1,8 @@
 os:
   name: debian
 include:
-  - include/template.yaml
-  - ../device/standard.yaml
-  - ../device/mariadb.yaml
-  - ../debian/base/debian.yaml
-  - ../debian/mariadb/mariadb.yaml
-  - ../local/debian/template.yaml
+- include/debian.yaml
+- ../device/mariadb.yaml
+- ../debian/mariadb/mariadb.yaml
 stop: true
 snapshot: copy

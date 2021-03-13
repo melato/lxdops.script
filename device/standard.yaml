@@ -1,6 +1,4 @@
 profile-pattern: (instance).lxdops
-include:
-  - ../local/properties.yaml
 filesystems:
   host:
     pattern: (zfsroot)/(project/)host/(instance)

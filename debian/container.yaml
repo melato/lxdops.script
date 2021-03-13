@@ -1,4 +1,0 @@
-include:
-  - ../device/standard.yaml
-  - base/copy.yaml
-  - base/user.yaml

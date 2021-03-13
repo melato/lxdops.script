@@ -1,10 +1,9 @@
 os:
   name: alpine
 origin: alp/copy
+device-template: alp
 include:
-  - include/template.yaml
-  - ../device/standard.yaml
-  - ../alpine/lamp/lamp.yaml
-  - ../local/alpine/template.yaml
+- include/alpine.yaml
+- ../alpine/lamp/lamp.yaml
 snapshot: copy
 stop: true

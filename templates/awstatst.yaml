@@ -1,14 +1,13 @@
 os:
   name: alpine
 origin: phpt/copy
+device-template: phpt
 description: |
     LXD alpine container with packages needed by awstats.
     Does not include awstats itself.  This should be downloaded
     from the awstats website and attached via a profile.
-device-template: phpt
 include:
-  - include/template.yaml
-  - ../device/standard.yaml
-  - /var/opt/dev/script/lxddops/alpine/awstats/awstats.yaml
+- include/alpine.yaml
+- ../alpine/awstats/awstats.yaml
 snapshot: copy
 stop: true
