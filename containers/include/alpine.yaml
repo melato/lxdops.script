@@ -1,0 +1,4 @@
+include:
+- ../../device/standard.yaml
+- ../../alpine/base/copy.yaml
+- ../../alpine/base/user.yaml

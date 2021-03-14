@@ -1,5 +1,0 @@
-os:
-  name: alpine
-description: git
-packages:
-  - git

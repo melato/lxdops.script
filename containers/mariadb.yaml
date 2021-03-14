@@ -5,5 +5,5 @@ device-template: mariadbt
 profiles:
   - default
 include:
-  - ../device/mariadb.yaml
-  - ../debian/container.yaml
+- ../device/mariadb.yaml
+- include/debian.yaml

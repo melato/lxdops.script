@@ -1,0 +1,4 @@
+include:
+  - ../../device/standard.yaml
+  - ../../debian/base/copy.yaml
+  - ../../debian/base/user.yaml

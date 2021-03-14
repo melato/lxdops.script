@@ -1,13 +1,10 @@
 os:
   name: alpine
 description: all dev packages
+packages:
+- git
 include:
-  - user.yaml
-  - git.yaml
-  - archive.yaml
-  - encrypt.yaml
-  - java.yaml
-  - log.yaml
-  - net.yaml
-  - perl.yaml
-  - sqlite.yaml
+- user.yaml
+- archive.yaml
+- log.yaml
+- net.yaml

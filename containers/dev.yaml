@@ -5,4 +5,4 @@ device-template: alp
 profiles:
   - default
 include:
-  - ../alpine/container.yaml
+- include/alpine.yaml

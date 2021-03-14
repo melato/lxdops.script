@@ -6,4 +6,4 @@ source-config: ../templates/alp.yaml
 profiles:
   - default
 include:
-  - ../alpine/container.yaml
+- include/alpine.yaml

@@ -1,5 +1,0 @@
-os:
-  name: alpine
-description: sqlite
-packages:
-  - sqlite

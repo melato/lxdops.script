@@ -6,6 +6,5 @@ x-source-config: mariadb.yaml
 profiles:
   - default
 include:
-  - ../device/mariadb.yaml
-  - ../debian/container.yaml
-  - ../local/test.yaml
+- ../device/mariadb.yaml
+- include/debian.yaml

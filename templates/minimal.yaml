@@ -1,0 +1,13 @@
+os:
+  name: alpine
+description: |
+  A minimal alpine container, for testing
+  Can replace alp.yaml as the base alpine template.
+include:  
+- include/template.yaml
+- ../device/apk-cache.yaml
+- ../device/standard.yaml
+- ../alpine/base/version.yaml
+stop: true  
+snapshot: copy  
+

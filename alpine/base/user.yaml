@@ -1,5 +1,6 @@
 os:
   name: alpine
+description: create a user, using the name, uid, gid of the host user
 users:
     - name:
       shell: /bin/bash

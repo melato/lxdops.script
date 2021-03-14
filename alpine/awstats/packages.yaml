@@ -1,6 +1,0 @@
-os:
-  name: alpine
-packages:
-- perl
-- make
-- perl-app-cpanminus

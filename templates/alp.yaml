@@ -1,9 +1,1 @@
-os:
-  name: alpine
-description: A base alpine container, with several packages, but minimal processes
-include:  
-- include/alpine.yaml
-- ../alpine/packages/packages.yaml
-stop: true  
-snapshot: copy  
-
+base.yaml

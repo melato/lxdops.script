@@ -1,4 +1,0 @@
-profiles:
-  - default
-include:
--  noboot.yaml

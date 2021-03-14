@@ -1,6 +1,6 @@
 os:
   name: alpine
-descriptions: packages that we need in order to create users
+descriptions: packages that we might need in order to create users
 packages:
   - sudo
   - bash

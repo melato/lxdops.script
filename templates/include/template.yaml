@@ -1,6 +1,5 @@
 profiles:
 - default
 include:  
-- ../../local/properties.yaml
 - ../../device/standard.yaml
 - ../../noboot.yaml

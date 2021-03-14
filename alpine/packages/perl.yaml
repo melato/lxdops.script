@@ -1,5 +1,0 @@
-os:
-  name: alpine
-description: perl
-packages:
-- perl

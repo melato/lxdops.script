@@ -1,7 +1,0 @@
-os:
-  name: alpine
-description: encryption-related packages
-packages:
-  - openssl
-  - apache2-utils
-  - gnupg

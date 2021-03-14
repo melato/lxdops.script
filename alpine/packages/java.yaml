@@ -1,4 +1,0 @@
-os:
-  name: alpine
-packages:
-- openjdk8

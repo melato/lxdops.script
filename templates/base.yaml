@@ -1,0 +1,10 @@
+os:
+  name: alpine
+description: |
+  A base alpine container, with just enough packages for lxdops demo.
+include:  
+- include/alpine.yaml
+- ../alpine/base/packages.yaml
+stop: true  
+snapshot: copy  
+

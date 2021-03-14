@@ -3,5 +3,8 @@ os:
 description: network related packages
 packages:
   - curl
+  - rsync
   - rrsync
   - bind-tools
+  - openssl
+  - apache2-utils
