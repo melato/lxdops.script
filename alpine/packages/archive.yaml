@@ -1,7 +1,0 @@
-os:
-  name: alpine
-description: archive related packages
-packages:
-  - zip
-  - unzip
-  - xz
