@@ -1,9 +1,11 @@
 profile-pattern: (instance).lxdops
+properties:
+  section: ""
 filesystems:
   host:
-    pattern: (zfsroot)/(project/)host/(instance)
+    pattern: (zfsroot)/(section)(project/)host/(instance)
   log:
-    pattern: (zfsroot)/(project/)log/(instance)
+    pattern: (zfsroot)/(section)(project/)log/(instance)
 devices:
   etc:
     path: /etc/opt
