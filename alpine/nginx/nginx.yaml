@@ -10,7 +10,6 @@ scripts:
     rc-update add rsyslog
     rc-update add nginx
     mkdir -p /etc/opt/nginx
-    rm /etc/nginx/conf.d/default.conf
 files:
 - source: files/etc.conf
   path: /etc/nginx/http.d/etc.conf
