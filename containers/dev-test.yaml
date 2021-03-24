@@ -1,0 +1,10 @@
+os:
+  name: alpine
+origin: alp/copy
+device-origin: dev@test
+x-source-config: dev.yaml
+profiles:
+  - default
+include:
+- include/alpine.yaml
+- include/test.yaml
