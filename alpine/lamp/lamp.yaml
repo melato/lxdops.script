@@ -1,4 +1,4 @@
 include:
-- postfix.yaml
 - apache2.yaml
 - php.yaml
+- postfix.yaml
