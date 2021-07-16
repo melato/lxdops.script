@@ -5,6 +5,4 @@ description: |
 include:  
 - include/alpine.yaml
 - ../alpine/base/packages.yaml
-stop: true  
-snapshot: copy  
 
