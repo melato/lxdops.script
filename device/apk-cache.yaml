@@ -1,11 +1,11 @@
 os:
   name: alpine
-  version: 3.13
+  version: 3.14
 description: |
   Specifies defines a shared /etc/apk/cache device
 filesystems:
   apk:
-      pattern: (zfsroot)/apk-cache/alpine-3.13
+      pattern: (zfsroot)/apk-cache/alpine-3.14
 devices:
   apk:
     path: /etc/apk/cache
