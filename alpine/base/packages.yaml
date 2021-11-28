@@ -3,4 +3,5 @@ os:
 descriptions: packages that we might need in order to create users
 packages:
   - sudo
+  - doas
   - bash
