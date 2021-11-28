@@ -1,7 +1,6 @@
 os:
   name: alpine
 include:
-- version.yaml
 - ssh.yaml
 - motd.yaml
 - cron-off.yaml
