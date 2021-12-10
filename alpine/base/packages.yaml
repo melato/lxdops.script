@@ -2,6 +2,9 @@ os:
   name: alpine
 descriptions: packages that we might need in order to create users
 packages:
-  - sudo
   - doas
   - bash
+scripts:
+- name: sudo
+  body: |
+    if [ -f /usr/bin/doas -a ! -e /sbin/sudo ]; then ln -s /usr/bin/doas /sbin/sudo; fi
