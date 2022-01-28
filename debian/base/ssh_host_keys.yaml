@@ -1,6 +1,4 @@
-os:
-  name: debian
-  description:
+description:
     create new host ssh keys, and save them in /etc/opt/etc/ssh,
     if not already done
 scripts:
