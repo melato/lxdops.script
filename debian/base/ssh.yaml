@@ -1,5 +1,3 @@
-os:
-  name: debian
 packages:
 - openssh-server
 scripts:

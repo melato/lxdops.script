@@ -1,5 +1,3 @@
-os:
-  name: debian
 description: copy files from /etc/opt/etc/ to /etc/, and reboot
 scripts:
   - name: etc

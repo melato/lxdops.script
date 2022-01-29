@@ -1,5 +1,3 @@
-os:
-  name: debian
 description: copy a container
 include:
  - etc.yaml
