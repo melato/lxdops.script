@@ -3,4 +3,3 @@ os:
 include:
 - ssh.yaml
 - motd.yaml
-- cron-off.yaml
