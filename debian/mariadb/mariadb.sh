@@ -1,6 +1,7 @@
 #!/bin/sh
 
 service mysql stop
+chown mysql:mysql /var/lib/mysql /var/lib/mysql-log
 mv /var/lib/mysql/ib_logfile* /var/lib/mysql-log/
 cat >> /etc/mysql/my.cnf <<END
 [mysqld]
