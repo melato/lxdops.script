@@ -5,6 +5,7 @@ packages:
 - php
 - php7-pecl-imagick
 - php7-pecl-apcu
+- php7-pecl-redis
 - php7-json
 - php-apache2
 - php-bcmath
