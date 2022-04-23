@@ -6,8 +6,6 @@ packages:
 files:
 - source: apache2/remoteip.conf
   path: /etc/apache2/conf.d/remoteip.conf
-- source: apache2/etc.conf
-  path: /etc/apache2/conf.d/etc.conf
 - source: apache2/name.conf
   path: /etc/apache2/conf.d/name.conf
 scripts:
@@ -16,5 +14,10 @@ scripts:
     mkdir -p /etc/opt/apache2
     sed -i 's/#LoadModule remoteip_module/LoadModule remoteip_module/' /etc/apache2/httpd.conf
     sed -i 's/#LoadModule rewrite_module/LoadModule rewrite_module/' /etc/apache2/httpd.conf
+    if grep /etc/opt/apache2 /etc/apache2/httpd.conf > /dev/null; then
+        echo "/etc/opt/apache2/ already included"
+    else
+        echo 'IncludeOptional /etc/opt/apache2/*.conf' >> /etc/apache2/httpd.conf
+    fi
     rc-update add apache2
     rc-service apache2 start
