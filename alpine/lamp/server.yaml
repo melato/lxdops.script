@@ -1,0 +1,6 @@
+os:
+  name: alpine
+packages:
+- rsyslog
+- apache2-utils
+- mariadb-client
