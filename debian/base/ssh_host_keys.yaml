@@ -4,9 +4,9 @@ description:
 scripts:
 - name: ssh_keys
   body: |
-    if [ ! -e /etc/opt/etc/ssh ]; then
-      mkdir -p /etc/opt/etc/ssh
+    if [ ! -e /etc/opt/copy/etc/ssh ]; then
+      mkdir -p /etc/opt/copy/etc/ssh
       rm -f /etc/ssh/ssh_host*
       dpkg-reconfigure -f noninteractive openssh-server
-      cp /etc/ssh/ssh_host* /etc/opt/etc/ssh/
+      cp /etc/ssh/ssh_host* /etc/opt/copy/etc/ssh/
     fi

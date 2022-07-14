@@ -1,5 +1,6 @@
 description: copy a container
 include:
  - etc.yaml
+ - files.yaml
  - ssh_host_keys.yaml
 

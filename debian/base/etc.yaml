@@ -1,4 +1,6 @@
-description: copy files from /etc/opt/etc/ to /etc/, and reboot
+description: |
+    copy files from /etc/opt/etc/ to /etc/, and reboot
+    obsolete: use files.yaml instead
 scripts:
   - name: etc
     reboot: true

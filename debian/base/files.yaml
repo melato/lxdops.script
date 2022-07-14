@@ -1,0 +1,8 @@
+description: copy /etc/opt/copy/* to /, and reboot
+scripts:
+  - name: copy-files
+    reboot: true
+    body: |
+      if [ -d /etc/opt/copy ]; then
+        cp -a /etc/opt/copy/* /
+      fi
