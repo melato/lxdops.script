@@ -6,7 +6,4 @@ packages:
 - cron
 - mariadb-server
 - mariadb-client
-scripts:
-- name: "mariadb"
-  file: mariadb.sh
 
