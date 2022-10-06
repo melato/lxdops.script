@@ -7,10 +7,10 @@ packages:
 scripts:
 - name: nginx
   body: |
-    rc-update add rsyslog
-    rc-update add nginx
     mkdir -p /etc/opt/nginx
     rm /etc/nginx/http.d/default.conf
+    rc-update add rsyslog
+    rc-update add nginx
 files:
 - source: files/etc.conf
   path: /etc/nginx/http.d/etc.conf
