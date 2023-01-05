@@ -3,10 +3,9 @@ os:
 packages:
 - apache2
 - php
-- php8-pecl-imagick
-- php8-pecl-apcu
-- php8-pecl-redis
-- php8-json
+- php81-pecl-imagick
+- php81-pecl-apcu
+- php81-pecl-redis
 - php-apache2
 - php-bcmath
 - php-bz2
