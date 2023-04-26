@@ -1,3 +1,5 @@
+This repository is obsolete.  It is superceded by [lxdops.demo](https://github.com/melato/lxdops).
+
 A set of example and working configuration files for lxdops (https://github.com/melato/lxdops).
 
 **Initial setup:**
